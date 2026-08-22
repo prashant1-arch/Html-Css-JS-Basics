@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .logo{
+            font-size: 50px;
+            color: #1877f2;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .login-box{
+            background: white;
+            padding: 30px;
+            width: 360px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .login-box input{
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border:1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .login-bos button{
+            width: 100px;
+            padding: 14px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 18px;
+            font-weight:bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .login-bos a{
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            color:#1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-box a:hover{
+            text-decoration: underline;
+        }
+        .creat account{
+            background-color: #42b72a;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">facebook</div>
+        <div class="login-box">
+            <input type="text" placeholder="email or phonenumber"/>
+            <input type="password" placeholder="password"/>
+            <button>log in</button>
+            <a href="#">forgotten password?</a>
+            <hr/>
+            <button class="creat-account">Creat a new account</button>
+        </div>
+    </div>
+    
+</body>
+</html>

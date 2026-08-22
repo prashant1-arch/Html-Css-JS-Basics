@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: gray;
+            padding: 5px;
+        }
+    </style>
+    </head>
+     <body>
+        <div onmouseover="f1()">
+            <p>on mouse over</p>
+            <p id="p1">mouse move on me</p>
+        </div>
+        <script>
+            var  x=0;
+            function f1()
+            {
+                x=x+1;
+                document.getElementById("p1").innerHTML=x;
+            }
+        </script>
+    </body>
+
+</html>

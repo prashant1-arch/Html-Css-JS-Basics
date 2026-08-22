@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form</title>
+        <style>
+            body {
+                font-family: arial,sans-serif;
+                background-color:#f2f2f2;
+                display:flex;
+                justify-content: center;
+                padding:40px;
+
+            }
+            .form-box {
+                background-color: white;
+                border:2px solid#8b0000;
+                padding: 30px;
+                width:400px;
+                border: radius 10px;
+                box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+
+            }
+            h2{
+                text-align: center;
+                color: #8b0000;
+            }
+            label {
+                display:block;
+                margin-top: 10px;
+
+            }
+            input[type="text"],
+            input[type="number"]
+            input[type="date"]
+            input[type="email"]
+            input[type="file"]
+            textarea {
+                width:100%;
+                padding: 8px;
+                margin-top: 5px;
+                margin-bottom: 14px;
+                border: 1px solid#ccc;
+                border-radius:5px;
+            }
+            textarea {
+                resize:vertical;
+            }
+            .cheak box-group,
+            .radio-group{
+                margin-top:5px;
+                margin-bottom: 10px;
+            }
+            .submit-btn {
+                display:block;
+                width:100%;
+                padding:10px;
+                background-color: #8b0000;
+                color: white;
+                border: none;
+                border-radius:5px;
+                cursor:pointer;
+            }
+            .submit-btn:hover{
+                background-color: #a30000;
+            }
+            .inline-btn{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-box">
+            <h2>registration form</h2>
+            <form>
+                <!--name-->
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name">
+                <!--age-->
+                <label for="age">age:</label>
+                <input type="date">
+                <!--gender-->
+                <label>gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label>
+                </div>
+                <hr>
+                <!--device-->
+                <label>which device do you want listen to music on</label>
+                <div class="checkbox-group">
+                    <select name="device">
+                        <option value="ipad">ipad</option>
+                         <option value="radio">radio</option>
+                          <option value="computer">computer</option>
+                    </select>
+                </div>
+                <hr>
+                <!--favorite music service-->
+                <label>plese select your favorite music service</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="itunes" name="music_service" value="itunes">
+                    <label for="itunes">itunes</label>
+                    <input type="checkbox" id="saavan" name="music_service" value="saavan">
+                    <label for="saavan">saavan</label>
+                </div>
+                <!--about yourself-->
+                <label for="about">Tell me about yourself</label>
+                <textarea id="about" name="about" rows="4" placeholder="enter here..."></textarea>
+                <!--date-->
+                <label for="date">date</label>
+                <input type="date" id="date" name="date">
+                <!--email-->
+                <label for="email">plese enter your email address</label>
+                <input type="email" id="email" name="email">
+                <button type="button" class="inline-btn">submit</button>
+                <!--resume upload-->
+                <label for="resume">plese upload your resume</label>
+                <input type="file" id="resume" name="resume">
+                <!--submit button-->
+                <button type="submit" class="submit-btn">submit</button>
+        
+            </form>
+        </div>
+
+    </body>
+</html>

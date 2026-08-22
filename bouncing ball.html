@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing ball</title>
+<style>
+    body{
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(to top,#1a1a1a,#333);
+       
+    }
+    .ball{
+        width: 60px;
+        height: 60px;
+        background: radial-gradient(circle at 30% 30%,#ff4d4d,#c10000);
+        border-radius: 50%;
+        position:relative;
+        animation: bounce 0.5 ease-in-out 0.5s infinite alternate;
+    }
+      
+        @keyframes bounce{
+            from 0%{
+                transform: translate(20px,50px);
+            }
+            to 50%{
+                transform: translate(-20px,-50px);
+            }
+            
+        }
+
+</style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>

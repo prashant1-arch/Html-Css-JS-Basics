@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>infopark</title>
+        <script>
+            function addnumbers(){
+                var num1=parseFloat(document.getElementById("num1").value);
+                var num2=parseFloat(document.getElementById("num2").value);
+                document.getElementById("result").innerText="result:"+(num1+num2);
+            }
+        </script>
+        
+    </head>
+    <body>
+        <h2>simple addition calculater</h2>
+        <input type="number" id="num1" placeholder="first number">
+        <input type="number" id="num2" placeholder="second number">
+        <button onclick="addnumbers()">add</button>
+        <p id="result"></p>
+
+    </body>
+</html>

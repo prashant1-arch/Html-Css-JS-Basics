@@ -1,0 +1,152 @@
+k<!DOCTYPE html>
+<html>
+    <head>
+        <title>my portfolio</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            body{
+                font-family: 'segoe UI',sans-serif;
+                line-height: 1.6;
+            }
+            header{
+                background-color: #d77b7b;
+                color:white;
+                padding: 20px;
+                position: sticky;
+                top:0;
+                z-index: 10;
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            
+            }
+            nav h1{
+                font-size: 24px;
+            }
+            nav ul {
+                display: flex;
+                list-style: none;
+            }
+            nav ul li {
+                color: white;
+                text-decoration: none;
+            }
+            nav ul li a:hover{
+                text-decoration: underline;
+            }
+            section{
+                padding: 50px 20px;
+            }
+            .home{
+                background: #f4f4f4;
+                text-align: center;
+            }
+            .about,
+            .skill,
+            .project,
+            .contact{
+                background: #fff;
+                text-decoration: none;
+            }
+            .skill ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0;
+            }
+            .skill ul li{
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            .project .card{
+                background: #f0f0f0;
+                padding: 20px;
+                margin: 10px 0;
+                border-radius: 10px;
+            }
+            footer{
+                text-align: center;
+                background: #333;
+                color: white;
+                padding: 15px;
+            }
+            
+           
+           
+            
+            @media(max-width:768px){
+                nav ul{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                nav ul li{
+                    margin: 10px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>prashant portfolio</h1>
+            
+                <ul>
+                    <li><a href="#home">Home</a></li>&nbsp;&nbsp;&nbsp;
+                    <li><a href="#about">About</a></li>&nbsp;&nbsp;
+                    <li><a href="#skill">Skill</a></li>&nbsp;&nbsp;
+                    <li><a href="#project">Project</a></li>&nbsp;&nbsp;
+                    <li><a href="experience">Experience</a> </li>&nbsp;
+                    <li><a href="#contact">Contact</a></li>&nbsp;&nbsp;
+                </ul>
+                
+            </nav>
+        </header>
+        <section id="home" class="home">
+            <h2>Welcome to my portfolio</h2>
+            <p>I'am a passionate web devloper aiming to build amazing web site </p>
+        </section>
+        <section id="skill" class="skill">
+            <h2>skill</h2>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Java script</li>
+                <li>React(basic)</li>
+                <li>Boot strap</li>
+            </ul>
+        </section>
+        <section id="project" class="project">
+            <h2>projects</h2>
+            <div class="card">
+                <h3>task manager app</h3>
+                <p>a to do list app applicartion to manage daily task</p>
+            </div>
+            <div class="card">
+                <h3>calculater</h3>
+                <p>a fully working calculater using html css javascript</p>
+            </div>
+            
+        </section>
+        <section id="contact" class="contact">
+            <h2>contact me</h2>
+            <p>Email:prashantsavita123@gmail.com</p>
+            <p>linked in:linkedin.com/in/prashant</p>
+        </section>
+        <footer>
+            <p>&copy; 2025 prashant's portfolio</p>
+        </footer>
+        <script>
+            console.log("portfolio loaded");
+        </script>
+    </body>
+</html>

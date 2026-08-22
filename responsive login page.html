@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive login page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">my brand</div>
+            <ul class="nav-link">
+                <li><a href="#hero">home</a></li>
+                <li><a href="#features">features</a></li>
+                <Li><a href="#contact">contact</a></Li>
+            </ul>
+            <div class="menu-toggle" onclick="togglemenu()"><i class="fa-solid fa-list"></i></div>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div>
+            <h1>Welcome to my landing page</h1>
+            <p>Build responsive website easily with HTML,CSS,JS</p>
+            <a href="#features" class="btn">get started</a>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="features">
+            <h3>first</h3>
+            <p>Optimise code ensure your website loads quickly </p>
+        </div>
+        <div class="features">
+            <h3>Responsive</h3>
+            <p>This website works on all devices like:desktop mobile .</p>
+        </div>
+        <div class="features">
+            <h3>Customizable</h3>
+            <p>easy to edit and adapt for your project need</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>&copy;2025 my brand.All right reserved</p>
+
+    </footer>
+    <script>
+        function togglemenu(){
+            document.querySelector('.nav-links') .classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
