@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Shadow in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+   <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sun */
+.shadow {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+  background: #ffd700;
+
+  /* Sun Glow + Rays */
+  box-shadow:
+    0 0 20px #ffd700,
+    0 0 40px #ffb300,
+    0 0 60px #ff9800,
+    0 0 90px #ff6d00,
+    0 0 130px #ff4500,
+    0 0 180px rgba(255, 69, 0, 0.6);
+}
+   </style>
+  </head>
+  <body>
+    <section>
+      <div class="shadow"></div>
+    </section>
+  </body>
+</html>

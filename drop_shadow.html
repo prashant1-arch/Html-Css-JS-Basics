@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Shadow in CSS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background: orange;
+            border-radius: 50%;
+
+            /* Drop Shadow */
+            filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+        }
+
+        h1 {
+            position: absolute;
+            margin-top: 350px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+    <h1>Drop Shadow</h1>
+
+</body>
+</html>

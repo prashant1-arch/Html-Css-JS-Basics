@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+
+            /* CSS-only radial gradient */
+            background: radial-gradient(
+                circle,
+                #ffeb3b 0%,
+                #ff9800 30%,
+                #f44336 60%,
+                #9c27b0 100%
+            );
+        }
+
+        .box {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+
+            background: radial-gradient(
+                circle,
+                #00c6ff 0%,
+                #0072ff 40%,
+                #6a11cb 70%,
+                #2575fc 100%
+            );
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Smooth Radial Gradient</h1>
+    </div>
+
+</body>
+</html>
