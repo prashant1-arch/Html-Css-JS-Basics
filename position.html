@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Absolute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  padding: 5rem 10rem;
+}
+
+#main-heading {
+  color: #1e1403;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.parent-div {
+  width: 1000px;
+  height: 800px;
+  color: #fff;
+  background: linear-gradient(to right, #514a9d, #24c6dc);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+}
+
+.child {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, #93edc7, #1cd8d2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* to make the text center   */
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  color: #003180;
+}
+
+.child:nth-child(2),
+.child:nth-child(4) {
+  background: linear-gradient(to right, #3cd3ad, #4cb8c4);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*? Actual Positions starts Here  */
+
+.parent-div {
+  position: relative;
+  /* margin-left: 200px; */
+  left: 300px;
+}
+
+.child {
+  position: absolute;
+}
+
+/* top, left, bottom, right  */
+
+.child-2 {
+  top: 0;
+  right: 0;
+}
+
+.child-3 {
+  bottom: 0;
+  right: 0;
+}
+
+.child-4 {
+  bottom: 0;
+}
+
+.child-5 {
+  /*left: 425px;
+  top: 325px;
+  */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+  </head>
+  <body>
+    <h1 id="main-heading">CSS Positions</h1>
+
+    <section class="parent-div">
+      <div class="child child-1">child 1</div>
+      <div class="child child-2">child 2</div>
+      <div class="child child-3">child 3</div>
+      <div class="child child-4">child 4</div>
+      <div class="child child-5">child 5</div>
+    </section>
+  </body>
+</html>
