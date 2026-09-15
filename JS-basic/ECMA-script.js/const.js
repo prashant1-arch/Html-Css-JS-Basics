@@ -6,4 +6,4 @@ if (true) {
 }
 
 name = "technical";
-console.log(name);
+console.log(name);Microsoft.QuickAction.Bluetooth
