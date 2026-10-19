@@ -1,6 +1,6 @@
 
-//!JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.
-
+//! Question 1: Calculator Function
+//! Write a JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.
 
 const calculator = (num1, num2, operator) => {
   let result;
@@ -31,4 +31,4 @@ const calculator = (num1, num2, operator) => {
 
 console.log(calculator(5, 2, "+")); // Output: 7
 console.log(calculator(8, 4, "-")); // Output: 4
-console.log(calculator(10, 0, "/")); // Output: 0 is not allowed
+console.log(calculator(10, 2, "/")); // Output: 5
